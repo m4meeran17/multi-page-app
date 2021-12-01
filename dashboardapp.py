@@ -2,7 +2,7 @@
 """
 import streamlit as st
 
-class MultiApp:
+class DashboardApp:
     """Framework for combining multiple streamlit applications.
     Usage:
         def foo():

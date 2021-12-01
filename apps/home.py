@@ -3,6 +3,6 @@ import streamlit as st
 def app():
     st.title('Home')
 
-    st.write('This is the `home page` of this multi-page app.')
+    st.write('This is the `home page` of the dashboard.')
 
-    st.write('In this app, we will be building a simple classification model using the Iris dataset.')
+    st.write('Select Data for Data Exporter')

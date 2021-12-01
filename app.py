@@ -1,19 +1,21 @@
 import streamlit as st
-from multiapp import MultiApp
-from apps import home, data, model # import your app modules here
+from dashboardapp import DashboardApp
+from apps import home, data # import your app modules here
+# , trends, validator 
 
-app = MultiApp()
+app = DashboardApp()
 
 st.markdown("""
-# Multi-Page App
+# Dashboard - Edvoy Data Engineering Team
 
-This multi-page app is using the [streamlit-multiapps](https://github.com/upraneelnihar/streamlit-multiapps) framework developed by [Praneel Nihar](https://medium.com/@u.praneel.nihar). Also check out his [Medium article](https://medium.com/@u.praneel.nihar/building-multi-page-web-app-using-streamlit-7a40d55fa5b4).
+This is a dashboard to Export, Import and process data in a smoother way.
 
 """)
 
 # Add all your application here
 app.add_app("Home", home.app)
 app.add_app("Data", data.app)
-app.add_app("Model", model.app)
+# app.add_app("Trends", trends.app)
+# app.add_app("QC Review", validator.app)
 # The main app
 app.run()
